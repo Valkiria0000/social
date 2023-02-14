@@ -1,4 +1,29 @@
 .App {
+
+  max-width: 1440px;
+  background-color: aqua;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "header header"
+  "navbar main";
+}
+
+.header {
+  grid-area: header;
+  background-color: brown;
+}
+.navbar {
+  grid-area: navbar;
+  background-color: darkslategray;
+}
+.main {
+  grid-area: main;
+  background-color: chartreuse;
+}
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +61,4 @@
     transform: rotate(360deg);
   }
 }
+*/
