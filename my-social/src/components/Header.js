@@ -1,9 +1,16 @@
- const Header = () => {
+import Account from "./Account";
+import classes from "./Header.module.css";
+import Search from "./Search";
+
+
+    const Header = () => {
     return (
-        <header className="header">
-            <img width={"50px"} src="https://e7.pngegg.com/pngimages/603/555/png-clipart-round-fanta-logo-fizzy-drinks-coca-cola-fanta-sprite-fanta-food-text.png"/>
+        <header className={classes.header}>
+            <img width={"50px"} src="img/logo.jpg"/>
+            <Search/>
+            <Account/>
         </header>
     )
- }
-
- export default Header;
+ 
+    }
+ export default Header

@@ -1,6 +1,7 @@
-const Navbar = () => {
+import classes from "./Navbar.module.css";
+    const Navbar = () => {
     return (
-        <nav className="navbar">
+        <nav className={classes.navbar}>
             <ul>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Message</a></li>
@@ -10,6 +11,6 @@ const Navbar = () => {
             </ul>
         </nav>
     )
- }
+    }
 
  export default Navbar;

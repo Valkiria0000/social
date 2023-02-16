@@ -1,9 +1,9 @@
 .App {
 
   max-width: 1440px;
-  background-color: aqua;
+  
   display: grid;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 80px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
   grid-template-areas: 
@@ -11,17 +11,9 @@
   "navbar main";
 }
 
-.header {
-  grid-area: header;
-  background-color: brown;
-}
-.navbar {
-  grid-area: navbar;
-  background-color: darkslategray;
-}
 .main {
   grid-area: main;
-  background-color: chartreuse;
+  background-color: #CEB9A2;
 }
 /*.App {
   text-align: center;

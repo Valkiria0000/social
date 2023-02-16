@@ -1,0 +1,14 @@
+
+.header {
+    grid-area: header;
+    background-color: #113746;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*#D74D3C
+  #EF816D
+  #113746
+  #3F877F
+  #CEB9A2*/
