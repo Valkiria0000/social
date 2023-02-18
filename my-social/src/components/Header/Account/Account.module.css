@@ -1,0 +1,19 @@
+.text {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    display: flex;
+    width: 13rem;
+    justify-content: space-around;
+    color: #CEB9A2;
+}
+
+.text a {
+    color: #CEB9A2;
+    text-decoration: none;
+
+}
+.text a:hover {
+    text-shadow: 0px -2px 4px #fff;
+    border-bottom: 1px dashed #CEB9A2; 
+    transition: 0.6s;
+}

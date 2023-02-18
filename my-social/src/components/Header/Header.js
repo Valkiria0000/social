@@ -1,6 +1,8 @@
-import Account from "./Account";
+
+import Account from "./Account/Account";
 import classes from "./Header.module.css";
-import Search from "./Search";
+import Search from "./Search/Search";
+
 
 
     const Header = () => {
@@ -9,6 +11,8 @@ import Search from "./Search";
             <img width={"50px"} src="img/logo.jpg"/>
             <Search/>
             <Account/>
+        
+    
         </header>
     )
  

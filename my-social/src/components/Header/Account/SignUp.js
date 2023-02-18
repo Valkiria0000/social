@@ -1,6 +1,6 @@
 const SignUp = () => {
     return(
-        <a>Зарегистрироваться</a>
+        <a href="#">Регистрация</a>
     )
 }
 export default SignUp

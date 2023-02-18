@@ -17,8 +17,14 @@ width: 16rem;
 cursor: pointer;
 
 }
+.input:hover {
+    box-shadow: -1px 0px 11px #fff;
+    transition: 0.6s;
+
+}
 .input:focus {
-    box-shadow: 0px -2px 4px #fff;
+ background-color: #EF816D;
+    transition: 0.6s;
 
 }
 .icon {

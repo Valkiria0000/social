@@ -1,6 +1,6 @@
 const SignIn = () => {
     return(
-        <a>Войти</a>
+        <a href="#">Вход</a>
     )
 }
 export default SignIn
