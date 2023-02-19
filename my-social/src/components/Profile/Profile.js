@@ -2,7 +2,7 @@ import MyPosts from "./MyPosts/MyPosts";
 import classes from "./Profile.module.css";
 const Profile = () => {
   return (
-    <main className={classes.profile}>
+    <>
       <div className={classes.image}></div>
       <div className={classes.user}>
         <div className={classes.ava}>
@@ -24,7 +24,7 @@ const Profile = () => {
       </div>
       <hr />
       <MyPosts />
-    </main>
+    </>
   );
 };
 

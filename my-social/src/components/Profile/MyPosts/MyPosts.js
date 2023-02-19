@@ -4,14 +4,14 @@ const MyPosts = () => {
   return (
     <div className={classes.posts}>
       <h2>Мои посты</h2>
+                 
+            <input className={classes.input}placeholder="Создать"></input>
+            <button>Добавить</button>
+            <button>Удалить</button>
+       
         <div>
-            Создать пост
-            <textarea></textarea>
-            <button>Добавить пост</button>
-            <button>Удалить пост</button>
-        </div>
-        <div>
-            <Post/>
+            <Post message="Hi, how are you?" like="5"/>
+            <Post message="Hello, I'am fine" like="20"/>
         </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import classes from "./Post.module.css"
-const Post = () => {
+const Post = (props) => {
   return (
-    <div>
+    <div className={classes.post}>
       <img className={classes.img} src="https://vraki.net/sites/default/files/inline/images/prik-ava-2.jpg" />
-      post1
+      {props.message}
+      <span>likes:{props.like}</span>
     </div>
   );
 };

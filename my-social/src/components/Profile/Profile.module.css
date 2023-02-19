@@ -1,14 +1,4 @@
 
-.profile {
-    grid-area: main;
-    background-color: #CEB9A2;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
-    box-shadow: inset 0px 0px 16px 8px #000;
-  }
 
 .image {
     background-image: url('../../../public/img/main.png');
