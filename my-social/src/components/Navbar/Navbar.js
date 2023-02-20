@@ -1,31 +1,32 @@
 import { NavLink } from "react-router-dom";
-import classes from "./Navbar.module.css";
+import  "./Navbar.css";
+
 const Navbar = () => {
   return (
-    <nav className={classes.navbar}>
-      <ul className={classes.menu}>
-        <li>
-          <NavLink to="/profile">
-          <img src="img/icon/user.svg" />
+    <nav className="navbar">
+      <ul className="menu">
+        <li >
+          <NavLink to="/profile" >
+          <img src="img/icon/user.svg" alt=""/>
           Профиль</NavLink>
         </li>
-        <li>
-        <NavLink to="/dialogs">
-          <img src="img/icon/message.svg" />
+        <li >
+        <NavLink to="/dialogs" >
+          <img src="img/icon/message.svg" alt="" />
           Сообщения</NavLink>
         </li>
-        <li>
+        <li >
           <NavLink to="/news">
-          <img src="img/icon/news.svg" />
+          <img src="img/icon/news.svg" alt="" />
           Новости</NavLink>
         </li>
-        <li>
+        <li >
           <NavLink to="/music">
-          <img src="img/icon/music.svg" />
+          <img src="img/icon/music.svg" alt="" />
           Музыка</NavLink>
         </li>
-        <li>
-         <NavLink to="/settings"> <img src="img/icon/setting.svg" />
+        <li >
+         <NavLink to="/settings"> <img src="img/icon/setting.svg" alt="" />
           Настройки</NavLink>
         </li>
       </ul>

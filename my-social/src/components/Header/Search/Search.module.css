@@ -23,8 +23,8 @@ cursor: pointer;
 
 }
 .input:focus {
- background-color: #EF816D;
-    transition: 0.6s;
+    box-shadow: -1px 0px 11px #EF816D;
+   
 
 }
 .icon {

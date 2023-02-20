@@ -23,7 +23,7 @@
   letter-spacing: 2px;
 
 }
-.menu li:hover {
+.menu li:hover{
   background-color: #CEB9A2;
   transition: 0.3s;
   color: #000;
@@ -37,7 +37,7 @@ color: #fff;
 text-decoration: none;
 }
 
-.menu li a:hover {
+.menu li a:hover{
   color: #000;
  
   }
@@ -45,4 +45,9 @@ text-decoration: none;
   width: 20px;
   color: #fff;
   margin: 0 20px;
+}
+.menu li a.active {
+  color: #000;
+  text-shadow: 1px 2px 3px #000;
+ 
 }

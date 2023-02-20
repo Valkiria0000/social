@@ -21,6 +21,10 @@ body {
   background-color:#000;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .main {
   grid-area: main;
   background-color: #CEB9A2;
@@ -32,6 +36,8 @@ body {
   box-shadow: inset 0px 0px 16px 8px #000;
 
 }
+
+
 /*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
