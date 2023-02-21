@@ -1,6 +1,8 @@
 const Message =(props)=> {
+    let data = props.data
+
     return (
-        <li >{props.message}</li>
+        data.map(message=> <li>{message.message}</li>)
     )
 }
 

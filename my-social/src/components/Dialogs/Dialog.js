@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom"
 
 const Dialog = (props) => {
-    let path = "/dialogs/" + props.id;
+   let data = props.data
+
+  
+   
     return(
-        <li ><NavLink to={path}>{props.name}</NavLink></li>
+        data.map(dialog=> <li><NavLink to={`/dialogs/${dialog.id}`}>{dialog.name}</NavLink></li>)
     )
 }
 export default Dialog
