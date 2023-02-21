@@ -1,5 +1,5 @@
 import MyPosts from "./MyPosts/MyPosts";
-import ProfileInfo from "./MyPosts/ProfileInfo/ProfileInfo";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import classes from "./Profile.module.css";
 const Profile = () => {
   return (

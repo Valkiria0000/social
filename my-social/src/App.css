@@ -1,12 +1,13 @@
 .App {
   max-width: 1440px;
   display: grid;
-  grid-template-rows: 80px 100%;
+  grid-template-rows: 80px 100vh 100px;
   grid-template-columns: 2fr 10fr;
   grid-gap: 18px;
   grid-template-areas: 
   "header header"
-  "navbar main";
+  "navbar main"
+  "footer footer";
 }
 * {
   padding: 0;
@@ -19,6 +20,7 @@
 
 body {
   background-color:#000;
+  min-height: 100vh;
 }
 
 ul {

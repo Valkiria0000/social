@@ -7,6 +7,7 @@ import Profile from "./components/Profile/Profile";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Setings";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
  <Router>
@@ -23,7 +24,7 @@ function App() {
             <Route path="/settings"  element={<Settings/>}/>
          </Routes>
         </main>
-     
+     <Footer/>
       </div>
       </Router>
   );
