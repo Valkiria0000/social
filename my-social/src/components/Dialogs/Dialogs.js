@@ -1,13 +1,15 @@
-import Dialog from "./Dialog";
-import classes from "./Dialog.module.css";
+import UsersDialog from "./UsersDialog";
+import classes from "./UsersDialog.module.css";
 import Message from "./Message";
 const Dialogs = (props) => {
 
 
   return (
     <div className={classes.content}>
-      <ul className={classes.dialogs}>
-        <Dialog dialogs={props.dialogs} />
+      <ul className={classes.usersDialog}>
+        
+          <UsersDialog usersDialogs={props.usersDialogs} />
+ 
       </ul>
       <ul className={classes.messages}>
         <Message messages={props.messages} />

@@ -15,11 +15,11 @@ function App(props) {
       <div className="App">   
       
         <Header />
-        <Navbar />
+        <Navbar menu = {props.state.navbar.menu} />
         <main className="main">
          <Routes>
-            <Route  path="/profile" element={<Profile posts = {props.posts}/>}/>
-            <Route path="/dialogs" element={<Dialogs dialogs = {props.dialogs} messages={props.messages}/>}/>
+            <Route  path="/profile" element={<Profile posts = {props.state.profile.posts}/>}/>
+            <Route path="/dialogs" element={<Dialogs usersDialogs = {props.state.dialogs.usersDialogs} messages={props.state.dialogs.messages}/>}/>
             <Route path="/news" element={<News/>}/>
             <Route path="/music" element={<Music/>}/>
             <Route path="/settings" element={<Settings/>}/>

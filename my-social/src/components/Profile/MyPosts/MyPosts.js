@@ -1,5 +1,6 @@
 import Post from "./Post/Post";
 import classes from './MyPosts.module.css'
+import Button from "../../UI/Button";
 
 
   const MyPosts = (props) => {
@@ -10,8 +11,8 @@ import classes from './MyPosts.module.css'
       <h2>Мои посты</h2>
                  
             <input className={classes.input}placeholder="Создать"></input>
-            <button>Добавить</button>
-            <button>Удалить</button>
+            <Button>Добавить</Button>
+            <Button>Удалить</Button>
        
         <div>
             <Post posts={props.posts} />

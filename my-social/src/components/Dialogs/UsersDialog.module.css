@@ -3,7 +3,7 @@
   height: 100%;
 }
 
-.dialogs,
+.usersDialog,
 .messages {
   border-radius: 20px;
   padding: 15px;
@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.dialogs {
+.usersDialog {
   flex: 2 1 100px;
   margin-right: 40px;
 }
