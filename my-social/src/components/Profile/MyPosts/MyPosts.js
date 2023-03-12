@@ -4,18 +4,17 @@ import React from "react";
 
 const MyPosts = (props) => {
 
-  console.log(props.newPostText);
   let newPost = React.createRef();
 
   let addPost = () => {
-    let text = newPost.current.value;
-    props.addPost(text);
-    props.updateNewPostText("");
+    props.addPost();
   };
 
   let onPostChange = () => {
     let text = newPost.current.value;
     props.updateNewPostText(text);
+    
+   
   };
   return (
     <div className={classes.posts}>

@@ -1,5 +1,6 @@
 .App {
   max-width: 1440px;
+  height: 100vh;
   display: grid;
   grid-template-rows: 80px auto 100px;
   grid-template-columns: 2fr 10fr;

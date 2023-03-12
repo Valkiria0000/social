@@ -3,7 +3,9 @@
     align-items: center;
     
   }
-  
+  .info {
+    margin: 20px 0;
+  }
   .user h1 {
     color: #113746;
     font-family: Georgia, 'Times New Roman', Times, serif;

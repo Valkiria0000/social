@@ -10,25 +10,40 @@ import Settings from "./components/Settings/Setings";
 import Footer from "./components/Footer/Footer";
 
 function App(props) {
-
   return (
- <Router>
-      <div className="App">   
-      
+    <Router>
+      <div className="App">
         <Header />
-        <Navbar menu = {props.state.navbar.menu} />
+        <Navbar menu={props.state.navbar.menu} />
         <main className="main">
-         <Routes>
-            <Route  path="/profile" element={<Profile profilePage = {props.state.profile}  addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>}/>
-            <Route path="/dialogs" element={<Dialogs usersDialogs = {props.state.dialogs.usersDialogs} messages={props.state.dialogs.messages}/>}/>
-            <Route path="/news" element={<News/>}/>
-            <Route path="/music" element={<Music/>}/>
-            <Route path="/settings" element={<Settings/>}/>
-         </Routes>
+          <Routes>
+            <Route
+              path="/profile"
+              element={
+                <Profile
+                  profilePage={props.state.profile}
+                  addPost={props.addPost}
+                  updateNewPostText={props.updateNewPostText}
+                />
+              }
+            />
+            <Route
+              path="/dialogs"
+              element={
+                <Dialogs
+                  usersDialogs={props.state.dialogs.usersDialogs}
+                  messages={props.state.dialogs.messages}
+                />
+              }
+            />
+            <Route path="/news" element={<News />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
         </main>
-     <Footer/>
+        <Footer />
       </div>
-      </Router>
+    </Router>
   );
 }
 
