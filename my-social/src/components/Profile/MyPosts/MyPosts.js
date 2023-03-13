@@ -1,17 +1,18 @@
 import Post from "./Post/Post";
 import classes from "./MyPosts.module.css";
 import React from "react";
+import { addPostCreator, updateNewPostTextActionCreator } from "../../../redux/state";
 
 const MyPosts = (props) => {
   let newPost = React.createRef();
 
   let addPost = () => {
-    props.dispatch({ type: "ADD-POST" });
+    props.dispatch(addPostCreator());
   };
 
   let onPostChange = () => {
     let text = newPost.current.value;
-    props.dispatch({ type: "UPDATE-NEW-POST-TEXT" , newText: text});
+    props.dispatch(updateNewPostTextActionCreator(text));
   };
   return (
     <div className={classes.posts}>
